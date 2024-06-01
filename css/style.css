@@ -1,6 +1,8 @@
 body {
-  background-color: #f9f7fe;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/954/original/Class_Agenda_Presentation_in_Colorful_Retro_Style.png?1717194778");
+  font-family: sans-serif;
 }
+
 .container {
   max-width: 600px;
   margin: 60px auto;
@@ -41,6 +43,7 @@ select {
 .city:last-child {
   border: none;
 }
+
 .time {
   font-size: 48px;
   font-weight: bold;
@@ -52,6 +55,10 @@ select {
 }
 footer {
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.back {
+  color: pink;
 }

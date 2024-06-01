@@ -4,50 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
-  <body>
-    <div class="container">
-      <h1>World Clock</h1>
-      <select id="city">
-        <option value="">Select a city</option>
-        <option value="current">My current location</option>
-        <option value="Europe/London">London</option>
-        <option value="Asia/Tokyo">Tokyo</option>
-        <option value="America/Mexico_City">Mexico City</option>
-      </select>
 
-      <div id="cities">
-        <div class="city" id="miami">
-          <div>
-            <h2>Miami</h2>
-            <div class="date"></div>
+  <body>
+    <div class="background-container">
+      <div class="container">
+        <h1>🌎 World Clock 🕛</h1>
+
+        <select id="city">
+          <option value="">Select a city...</option>
+          <option value="current">📌 My location</option>
+          <option value="Europe/London">💂 London (UTC+1)</option>
+          <option value="Asia/Tokyo">🌸 Tokyo (UTC+9)</option>
+          <option value="Europe/Zurich">🍫 Zurich (UTC+2)</option>
+          <option value="Europe/Berlin">🍺 Berlin (UTC+2)</option>
+          <option value="Australia/Sydney">🕷️ Sydney (UTC+11)</option>
+          <option value="Pacific/Fiji">🏝️ Fiji (UTC+12)</option>
+          <option value="Europe/Moscow">🪆 Moscow (UTC+3)</option>
+          <option value="America/Los_Angeles">🎬 Los Angeles (UTC-7)</option>
+          <option value="Pacific/Honolulu">🤿 Honolulu (UTC-10)</option>
+          <option value="America/Buenos_Aires">💃🏼 Buenos Aires (UTC-3)</option>
+          <option value="America/Toronto">🍁 Toronto (UTC-4)</option>
+          <option value="Africa/Cairo">🐪 Cairo (UTC +3)</option>
+        </select>
+
+        <div id="cities">
+          <div class="city" id="miami">
+            <div>
+              <h2>Miami</h2>
+              <div class="date"></div>
+            </div>
+            <div>
+              <div class="time"></div>
+            </div>
           </div>
-          <div>
-            <div class="time"></div>
-          </div>
-        </div>
-        <div class="city" id="shanghai">
-          <div>
-            <h2>Shanghai</h2>
-            <div class="date"></div>
-          </div>
-          <div>
-            <div class="time"></div>
+          <div class="city" id="shanghai">
+            <div>
+              <h2>Shanghai</h2>
+              <div class="date"></div>
+            </div>
+            <div>
+              <div class="time"></div>
+            </div>
           </div>
         </div>
       </div>
+
+      <footer>
+        This project was coded by <strong>Diletta Zecchinetti</strong> and is
+        <a
+          href="https://github.com/DilettaZecchinetti/world-clock"
+          target="_blank"
+          >open sourced on Github</a
+        >.
+      </footer>
+
+      <script src="javascript/index.js"></script>
     </div>
-    <footer>
-      This project was coded by <strong>Diletta Zecchinetti</strong> and is
-      <a
-        href="https://github.com/DilettaZecchinetti/world-clock"
-        target="_blank"
-        >open sourced on Github</a
-      >.
-    </footer>
-    <script src="javascript/index.js"></script>
   </body>
 </html>
